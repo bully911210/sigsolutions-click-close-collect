@@ -812,16 +812,6 @@
           </div>
           <div class="leadership-card">
             <div class="leader-image">
-              <img src="https://i.ibb.co/vBF7Bfc/Charles.png" alt="Charles Castle" loading="lazy">
-            </div>
-            <div class="card-content">
-              <h3>Charles Castle</h3>
-              <p class="leader-title">Shareholder</p>
-            </div>
-            <a href="mailto:charles@sigsolutions.co.za" class="btn btn-primary">Contact</a>
-          </div>
-          <div class="leadership-card">
-            <div class="leader-image">
               <img src="https://i.ibb.co/N1XqP2w/Franz.png" alt="Franz Badenhorst" loading="lazy">
             </div>
             <div class="card-content">
