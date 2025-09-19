@@ -3,72 +3,282 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SIG Solutions - Click, Close, Collect</title>
+  <title>SIG Solutions - Click, Close, Collect | Professional Call Center & Lead Generation</title>
 
-  <!-- SEO and Verification -->
-  <meta name="description" content="SIG Solutions - Professional call center with our proven Click, Close, Collect process for lead generation, sales support, and non-profit fundraising services.">
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="SIG Solutions offers professional call center services with our proven Click, Close, Collect process. Expert lead generation, sales support, and subscription management for growing businesses.">
+  <meta name="keywords" content="call center, lead generation, sales support, subscription management, business growth, SIG Solutions, Click Close Collect">
+  <meta name="author" content="SIG Solutions">
+  <meta name="robots" content="index, follow">
   <meta name="ahrefs-site-verification" content="f510f61092b7c31168e6fe0842c5dce74c343550d493e19905d99dc2397fd6db">
   
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="SIG Solutions - Click, Close, Collect">
+  <meta property="og:description" content="Professional call center services with proven results. We generate leads, close sales, and manage collections for subscription-based businesses.">
+  <meta property="og:url" content="https://sigsolutions.co.za">
+  <meta property="og:site_name" content="SIG Solutions">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SIG Solutions - Professional Call Center Services">
+  <meta name="twitter:description" content="Expert lead generation and sales support with our Click, Close, Collect methodology.">
+  
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 
-  <!-- External Fonts -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://sigsolutions.co.za">
 
   <style>
     :root {
-      --primary-color: #1e40af;
-      --primary-dark: #1e3a8a;
-      --secondary-color: #3b82f6;
-      --accent-color: #06b6d4;
-      --text-primary: #1f2937;
-      --text-secondary: #6b7280;
-      --text-light: #9ca3af;
-      --bg-primary: #ffffff;
-      --bg-secondary: #f8fafc;
-      --bg-dark: #0f172a;
-      --border-color: #e5e7eb;
-      --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-      --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-      --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-      --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-      --gradient-primary: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-      --gradient-hero: linear-gradient(135deg, rgba(30, 64, 175, 0.9), rgba(59, 130, 246, 0.8));
+      /* Primary Colors */
+      --primary-50: #eff6ff;
+      --primary-100: #dbeafe;
+      --primary-200: #bfdbfe;
+      --primary-300: #93c5fd;
+      --primary-400: #60a5fa;
+      --primary-500: #3b82f6;
+      --primary-600: #2563eb;
+      --primary-700: #1d4ed8;
+      --primary-800: #1e40af;
+      --primary-900: #1e3a8a;
+      
+      /* Secondary Colors */
+      --secondary-50: #f0f9ff;
+      --secondary-100: #e0f2fe;
+      --secondary-200: #bae6fd;
+      --secondary-300: #7dd3fc;
+      --secondary-400: #38bdf8;
+      --secondary-500: #0ea5e9;
+      --secondary-600: #0284c7;
+      --secondary-700: #0369a1;
+      --secondary-800: #075985;
+      --secondary-900: #0c4a6e;
+      
+      /* Neutral Colors */
+      --gray-50: #f8fafc;
+      --gray-100: #f1f5f9;
+      --gray-200: #e2e8f0;
+      --gray-300: #cbd5e1;
+      --gray-400: #94a3b8;
+      --gray-500: #64748b;
+      --gray-600: #475569;
+      --gray-700: #334155;
+      --gray-800: #1e293b;
+      --gray-900: #0f172a;
+      
+      /* Success Colors */
+      --success-50: #f0fdf4;
+      --success-500: #22c55e;
+      --success-600: #16a34a;
+      
+      /* Warning Colors */
+      --warning-50: #fffbeb;
+      --warning-500: #f59e0b;
+      
+      /* Error Colors */
+      --error-50: #fef2f2;
+      --error-500: #ef4444;
+      
+      /* Gradients */
+      --gradient-primary: linear-gradient(135deg, var(--primary-600) 0%, var(--secondary-500) 100%);
+      --gradient-secondary: linear-gradient(135deg, var(--secondary-400) 0%, var(--primary-500) 100%);
+      --gradient-hero: linear-gradient(135deg, rgba(30, 64, 175, 0.95) 0%, rgba(59, 130, 246, 0.9) 50%, rgba(14, 165, 233, 0.85) 100%);
+      --gradient-card: linear-gradient(145deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+      
+      /* Shadows */
+      --shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+      --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+      --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+      --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+      --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+      
+      /* Typography */
+      --font-family-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-family-heading: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      
+      /* Spacing */
+      --space-1: 0.25rem;
+      --space-2: 0.5rem;
+      --space-3: 0.75rem;
+      --space-4: 1rem;
+      --space-5: 1.25rem;
+      --space-6: 1.5rem;
+      --space-8: 2rem;
+      --space-10: 2.5rem;
+      --space-12: 3rem;
+      --space-16: 4rem;
+      --space-20: 5rem;
+      --space-24: 6rem;
+      
+      /* Border Radius */
+      --radius-sm: 0.125rem;
+      --radius-md: 0.375rem;
+      --radius-lg: 0.5rem;
+      --radius-xl: 0.75rem;
+      --radius-2xl: 1rem;
+      --radius-3xl: 1.5rem;
+      --radius-full: 9999px;
+      
+      /* Transitions */
+      --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+      --transition-normal: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+      --transition-slow: 500ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    * {
+    /* Reset & Base */
+    *, *::before, *::after {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
+    }
+
+    html {
+      font-size: 16px;
+      scroll-behavior: smooth;
+      scroll-padding-top: 80px;
     }
 
     body {
-      font-family: 'Inter', sans-serif;
+      font-family: var(--font-family-primary);
+      font-size: 1rem;
       line-height: 1.6;
-      color: var(--text-primary);
-      background-color: var(--bg-primary);
+      color: var(--gray-800);
+      background-color: var(--gray-50);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
     }
 
+    /* Utility Classes */
     .container {
       max-width: 1200px;
       margin: 0 auto;
-      padding: 0 20px;
+      padding: 0 var(--space-4);
     }
 
-    /* Header Styles */
+    .container-lg {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 var(--space-4);
+    }
+
+    .visually-hidden {
+      position: absolute !important;
+      width: 1px !important;
+      height: 1px !important;
+      padding: 0 !important;
+      margin: -1px !important;
+      overflow: hidden !important;
+      clip: rect(0, 0, 0, 0) !important;
+      white-space: nowrap !important;
+      border: 0 !important;
+    }
+
+    /* Typography */
+    h1, h2, h3, h4, h5, h6 {
+      font-family: var(--font-family-heading);
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--gray-900);
+    }
+
+    h1 { font-size: clamp(2.5rem, 5vw, 4rem); }
+    h2 { font-size: clamp(2rem, 4vw, 3rem); }
+    h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
+    h4 { font-size: clamp(1.25rem, 2.5vw, 1.5rem); }
+
+    p {
+      margin-bottom: var(--space-4);
+      font-size: 1.125rem;
+      line-height: 1.7;
+      color: var(--gray-600);
+    }
+
+    a {
+      color: var(--primary-600);
+      text-decoration: none;
+      transition: color var(--transition-fast);
+    }
+
+    a:hover {
+      color: var(--primary-700);
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-2);
+      padding: var(--space-3) var(--space-6);
+      border: 2px solid transparent;
+      border-radius: var(--radius-lg);
+      font-family: var(--font-family-primary);
+      font-size: 1rem;
+      font-weight: 600;
+      line-height: 1;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all var(--transition-fast);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn-primary {
+      background: var(--gradient-primary);
+      color: white;
+      box-shadow: var(--shadow-md);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-lg);
+      color: white;
+    }
+
+    .btn-secondary {
+      background: white;
+      color: var(--primary-600);
+      border-color: var(--primary-200);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .btn-secondary:hover {
+      background: var(--primary-50);
+      border-color: var(--primary-300);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+      color: var(--primary-700);
+    }
+
+    .btn-lg {
+      padding: var(--space-4) var(--space-8);
+      font-size: 1.125rem;
+    }
+
+    /* Header */
     .header {
       position: fixed;
       top: 0;
       left: 0;
       right: 0;
-      background: rgba(255, 255, 255, 0.95);
-      backdrop-filter: blur(10px);
       z-index: 1000;
-      border-bottom: 1px solid var(--border-color);
-      transition: all 0.3s ease;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--gray-200);
+      transition: all var(--transition-fast);
     }
 
     .header.scrolled {
@@ -78,62 +288,76 @@
 
     .header-content {
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      padding: 1rem 0;
+      justify-content: space-between;
+      height: 80px;
     }
 
-    .logo-img {
-      height: 45px;
+    .logo {
+      height: 50px;
       width: auto;
+      transition: transform var(--transition-fast);
+    }
+
+    .logo:hover {
+      transform: scale(1.05);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: var(--space-8);
     }
 
     .nav-list {
       display: flex;
-      list-style: none;
-      gap: 2rem;
       align-items: center;
+      gap: var(--space-6);
+      list-style: none;
     }
 
-    .nav-list a {
-      text-decoration: none;
-      color: var(--text-primary);
-      font-weight: 500;
-      transition: color 0.3s ease;
+    .nav-link {
       position: relative;
+      font-weight: 500;
+      color: var(--gray-700);
+      transition: color var(--transition-fast);
     }
 
-    .nav-list a:hover {
-      color: var(--primary-color);
-    }
-
-    .nav-list a::after {
+    .nav-link::after {
       content: '';
       position: absolute;
-      bottom: -5px;
+      bottom: -8px;
       left: 0;
       width: 0;
       height: 2px;
-      background: var(--primary-color);
-      transition: width 0.3s ease;
+      background: var(--gradient-primary);
+      transition: width var(--transition-fast);
     }
 
-    .nav-list a:hover::after {
+    .nav-link:hover::after,
+    .nav-link.active::after {
       width: 100%;
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+      color: var(--primary-600);
     }
 
     .mobile-menu-btn {
       display: none;
       flex-direction: column;
-      cursor: pointer;
       gap: 4px;
+      cursor: pointer;
+      padding: var(--space-2);
     }
 
     .mobile-menu-btn span {
       width: 25px;
       height: 3px;
-      background: var(--text-primary);
-      transition: all 0.3s ease;
+      background: var(--gray-700);
+      border-radius: var(--radius-full);
+      transition: all var(--transition-fast);
     }
 
     /* Hero Section */
@@ -146,61 +370,15 @@
       overflow: hidden;
     }
 
-    .hero-animation {
+    .hero::before {
+      content: '';
       position: absolute;
       top: 0;
       left: 0;
-      width: 100%;
-      height: 100%;
-      opacity: 0.1;
-    }
-
-    .wave-canvas {
-      width: 100%;
-      height: 100%;
-    }
-
-    .hero-carousel {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 1;
-    }
-
-    .carousel-slides {
-      width: 100%;
-      height: 100%;
-      position: relative;
-    }
-
-    .carousel-slide {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      opacity: 0;
-      transition: opacity 1s ease-in-out;
-      background-size: cover;
-      background-position: center;
-    }
-
-    .carousel-slide.active {
-      opacity: 0.3;
-    }
-
-    .slide-1 {
-      background: linear-gradient(45deg, rgba(30, 64, 175, 0.1), rgba(59, 130, 246, 0.1));
-    }
-
-    .slide-2 {
-      background: linear-gradient(135deg, rgba(6, 182, 212, 0.1), rgba(30, 64, 175, 0.1));
-    }
-
-    .slide-3 {
-      background: linear-gradient(225deg, rgba(59, 130, 246, 0.1), rgba(6, 182, 212, 0.1));
+      right: 0;
+      bottom: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      animation: float 20s ease-in-out infinite;
     }
 
     .hero-content {
@@ -208,158 +386,383 @@
       z-index: 2;
       text-align: center;
       color: white;
-      max-width: 800px;
+      max-width: 900px;
       margin: 0 auto;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-2);
+      padding: var(--space-2) var(--space-4);
+      background: rgba(255, 255, 255, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: var(--radius-full);
+      font-size: 0.875rem;
+      font-weight: 500;
+      margin-bottom: var(--space-6);
+      animation: slideInDown 1s ease-out;
     }
 
     .hero h1 {
-      font-size: 3.5rem;
-      font-weight: 700;
-      margin-bottom: 1.5rem;
-      animation: fadeInUp 1s ease-out;
+      color: white;
+      margin-bottom: var(--space-6);
+      animation: slideInUp 1s ease-out 0.2s both;
     }
 
-    .hero p {
-      font-size: 1.25rem;
-      margin-bottom: 3rem;
-      opacity: 0.9;
-      animation: fadeInUp 1s ease-out 0.2s both;
-    }
-
-    .client-header {
+    .hero-subtitle {
       font-size: 1.5rem;
-      font-weight: 600;
-      margin-bottom: 2rem;
-      animation: fadeInUp 1s ease-out 0.4s both;
+      line-height: 1.5;
+      margin-bottom: var(--space-8);
+      opacity: 0.95;
+      animation: slideInUp 1s ease-out 0.4s both;
     }
 
-    /* Clients Slider */
-    .clients-slider {
-      overflow: hidden;
-      margin: 2rem 0;
-    }
-
-    .clients-track {
+    .hero-cta {
       display: flex;
-      gap: 3rem;
-      animation: slide 20s linear infinite;
+      flex-wrap: wrap;
+      gap: var(--space-4);
+      justify-content: center;
+      margin-bottom: var(--space-12);
+      animation: slideInUp 1s ease-out 0.6s both;
     }
 
-    .client-logo {
-      flex-shrink: 0;
-      height: 60px;
-      display: flex;
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: var(--space-8);
+      margin-top: var(--space-16);
+      animation: slideInUp 1s ease-out 0.8s both;
+    }
+
+    .stat-item {
+      text-align: center;
+      padding: var(--space-6);
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: var(--radius-xl);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .stat-number {
+      display: block;
+      font-size: 3rem;
+      font-weight: 800;
+      color: white;
+      margin-bottom: var(--space-2);
+    }
+
+    .stat-label {
+      font-size: 1rem;
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    /* Clients Section */
+    .clients {
+      padding: var(--space-16) 0;
+      background: white;
+      border-bottom: 1px solid var(--gray-200);
+    }
+
+    .clients-header {
+      text-align: center;
+      margin-bottom: var(--space-12);
+    }
+
+    .clients-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: var(--space-8);
       align-items: center;
     }
 
+    .client-logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 80px;
+      padding: var(--space-4);
+      background: var(--gray-50);
+      border-radius: var(--radius-lg);
+      transition: all var(--transition-fast);
+    }
+
+    .client-logo:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+    }
+
     .client-logo img {
-      height: 100%;
-      width: auto;
-      filter: brightness(0) invert(1);
-      opacity: 0.7;
-      transition: opacity 0.3s ease;
+      max-height: 100%;
+      max-width: 100%;
+      object-fit: contain;
+      filter: grayscale(100%) opacity(0.7);
+      transition: filter var(--transition-fast);
     }
 
     .client-logo:hover img {
-      opacity: 1;
+      filter: grayscale(0%) opacity(1);
     }
 
-    /* Sections */
-    .section-heading {
-      text-align: center;
-      margin-bottom: 4rem;
+    /* Process Section */
+    .process {
+      padding: var(--space-24) 0;
+      background: var(--gray-50);
     }
 
-    .section-heading h2 {
-      font-size: 2.5rem;
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: var(--space-12);
+      margin-top: var(--space-16);
+    }
+
+    .process-step {
+      position: relative;
+      padding: var(--space-8);
+      background: white;
+      border-radius: var(--radius-2xl);
+      box-shadow: var(--shadow-md);
+      transition: all var(--transition-normal);
+    }
+
+    .process-step:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-xl);
+    }
+
+    .step-number {
+      position: absolute;
+      top: -20px;
+      left: var(--space-8);
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--gradient-primary);
+      border-radius: var(--radius-full);
+      color: white;
+      font-size: 1.5rem;
+      font-weight: 800;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .step-icon {
+      font-size: 3rem;
+      color: var(--primary-500);
+      margin: var(--space-6) 0 var(--space-4);
+    }
+
+    .step-title {
+      font-size: 1.5rem;
       font-weight: 700;
-      margin-bottom: 1rem;
-      color: var(--text-primary);
+      color: var(--gray-900);
+      margin-bottom: var(--space-3);
     }
 
-    .section-heading p {
-      font-size: 1.125rem;
-      color: var(--text-secondary);
-      max-width: 600px;
-      margin: 0 auto;
+    .step-description {
+      color: var(--gray-600);
+      line-height: 1.7;
     }
 
-    .section-header {
-      text-align: center;
-      margin-bottom: 3rem;
+    /* Services Section */
+    .services {
+      padding: var(--space-24) 0;
+      background: white;
     }
 
-    .section-header h2 {
-      font-size: 2.5rem;
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: var(--space-8);
+      margin-top: var(--space-16);
+    }
+
+    .service-card {
+      padding: var(--space-8);
+      background: var(--gray-50);
+      border: 2px solid transparent;
+      border-radius: var(--radius-xl);
+      transition: all var(--transition-normal);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: var(--gradient-primary);
+      transform: scaleX(0);
+      transition: transform var(--transition-normal);
+    }
+
+    .service-card:hover {
+      border-color: var(--primary-200);
+      background: white;
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-4px);
+    }
+
+    .service-card:hover::before {
+      transform: scaleX(1);
+    }
+
+    .service-icon {
+      width: 80px;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--gradient-primary);
+      border-radius: var(--radius-full);
+      color: white;
+      font-size: 2rem;
+      margin-bottom: var(--space-6);
+    }
+
+    .service-title {
+      font-size: 1.5rem;
       font-weight: 700;
-      margin-bottom: 1rem;
-      color: var(--text-primary);
+      margin-bottom: var(--space-4);
+      color: var(--gray-900);
     }
 
-    .section-header p {
-      font-size: 1.125rem;
-      color: var(--text-secondary);
-      max-width: 600px;
-      margin: 0 auto;
+    .service-features {
+      list-style: none;
+      margin-top: var(--space-4);
     }
 
-    /* Solutions Section */
-    .solutions-section {
-      padding: 6rem 0;
-      background: var(--bg-secondary);
+    .service-features li {
+      display: flex;
+      align-items: center;
+      gap: var(--space-3);
+      padding: var(--space-2) 0;
+      color: var(--gray-600);
+    }
+
+    .service-features .fa-check {
+      color: var(--success-500);
+      font-weight: 600;
     }
 
     /* About Section */
     .about {
-      padding: 6rem 0;
+      padding: var(--space-24) 0;
+      background: var(--gray-50);
     }
 
     .about-content {
-      max-width: 800px;
-      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-16);
+      align-items: center;
+      margin-top: var(--space-16);
     }
 
-    .about-text p {
+    .about-text {
       font-size: 1.125rem;
       line-height: 1.8;
-      margin-bottom: 1.5rem;
-      color: var(--text-secondary);
+    }
+
+    .about-stats {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-6);
+      margin-top: var(--space-8);
+    }
+
+    .about-stat {
+      text-align: center;
+      padding: var(--space-6);
+      background: white;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .about-stat-number {
+      display: block;
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: var(--primary-600);
+      margin-bottom: var(--space-2);
+    }
+
+    .about-image {
+      position: relative;
+      border-radius: var(--radius-2xl);
+      overflow: hidden;
+      box-shadow: var(--shadow-xl);
+    }
+
+    .about-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 
     /* Leadership Section */
-    .leadership-section {
-      padding: 6rem 0;
-      background: var(--bg-secondary);
+    .leadership {
+      padding: var(--space-24) 0;
+      background: white;
     }
 
     .leadership-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
-      margin-top: 3rem;
+      gap: var(--space-8);
+      margin-top: var(--space-16);
     }
 
-    .leadership-card {
-      background: white;
-      border-radius: 16px;
-      padding: 2rem;
+    .leader-card {
+      position: relative;
+      padding: var(--space-8);
+      background: var(--gray-50);
+      border-radius: var(--radius-2xl);
       text-align: center;
-      box-shadow: var(--shadow-md);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      transition: all var(--transition-normal);
+      overflow: hidden;
     }
 
-    .leadership-card:hover {
-      transform: translateY(-5px);
+    .leader-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: var(--gradient-primary);
+      opacity: 0;
+      transition: opacity var(--transition-normal);
+    }
+
+    .leader-card:hover {
+      transform: translateY(-8px);
       box-shadow: var(--shadow-xl);
+      color: white;
+    }
+
+    .leader-card:hover::before {
+      opacity: 1;
+    }
+
+    .leader-card > * {
+      position: relative;
+      z-index: 2;
     }
 
     .leader-image {
       width: 120px;
       height: 120px;
-      margin: 0 auto 1.5rem;
-      border-radius: 50%;
+      margin: 0 auto var(--space-6);
+      border-radius: var(--radius-full);
       overflow: hidden;
-      border: 4px solid var(--primary-color);
+      border: 4px solid white;
+      box-shadow: var(--shadow-lg);
     }
 
     .leader-image img {
@@ -368,237 +771,227 @@
       object-fit: cover;
     }
 
-    .card-content h3 {
-      font-size: 1.25rem;
-      font-weight: 600;
-      margin-bottom: 0.5rem;
-      color: var(--text-primary);
+    .leader-name {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: var(--space-2);
+      color: var(--gray-900);
+      transition: color var(--transition-normal);
+    }
+
+    .leader-card:hover .leader-name {
+      color: white;
     }
 
     .leader-title {
-      color: var(--text-secondary);
-      margin-bottom: 1.5rem;
+      color: var(--gray-600);
+      font-weight: 500;
+      margin-bottom: var(--space-6);
+      transition: color var(--transition-normal);
+    }
+
+    .leader-card:hover .leader-title {
+      color: rgba(255, 255, 255, 0.9);
     }
 
     /* Contact Section */
     .contact {
-      padding: 6rem 0;
+      padding: var(--space-24) 0;
+      background: var(--gray-50);
     }
 
     .contact-content {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 4rem;
-      margin-top: 3rem;
+      gap: var(--space-16);
+      margin-top: var(--space-16);
     }
 
-    .contact-info h3,
-    .contact-form h3 {
-      font-size: 1.5rem;
-      font-weight: 600;
-      margin-bottom: 2rem;
-      color: var(--text-primary);
+    .contact-info {
+      padding: var(--space-8);
+      background: white;
+      border-radius: var(--radius-2xl);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .contact-form {
+      padding: var(--space-8);
+      background: white;
+      border-radius: var(--radius-2xl);
+      box-shadow: var(--shadow-lg);
     }
 
     .info-grid {
       display: grid;
-      gap: 1.5rem;
+      gap: var(--space-6);
     }
 
     .info-item {
       display: flex;
       align-items: flex-start;
-      gap: 1rem;
+      gap: var(--space-4);
     }
 
     .info-icon {
-      width: 48px;
-      height: 48px;
-      background: var(--gradient-primary);
-      border-radius: 50%;
+      width: 60px;
+      height: 60px;
       display: flex;
       align-items: center;
       justify-content: center;
+      background: var(--gradient-primary);
+      border-radius: var(--radius-full);
       color: white;
+      font-size: 1.25rem;
       flex-shrink: 0;
     }
 
     .info-text h4 {
-      font-weight: 600;
-      margin-bottom: 0.25rem;
-      color: var(--text-primary);
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: var(--space-2);
+      color: var(--gray-900);
     }
 
     .info-text p,
-    .info-text address,
-    .info-text a {
-      color: var(--text-secondary);
-      text-decoration: none;
-    }
-
-    .info-text a:hover {
-      color: var(--primary-color);
+    .info-text address {
+      color: var(--gray-600);
+      font-style: normal;
     }
 
     /* Form Styles */
-    .form-group {
-      margin-bottom: 1.5rem;
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-4);
     }
 
-    .form-group label {
+    .form-group {
+      margin-bottom: var(--space-6);
+    }
+
+    .form-group.full-width {
+      grid-column: 1 / -1;
+    }
+
+    .form-label {
       display: block;
-      margin-bottom: 0.5rem;
-      font-weight: 500;
-      color: var(--text-primary);
+      font-weight: 600;
+      color: var(--gray-700);
+      margin-bottom: var(--space-2);
     }
 
     .required {
-      color: #ef4444;
+      color: var(--error-500);
     }
 
-    .form-group input,
-    .form-group textarea {
+    .form-input,
+    .form-textarea {
       width: 100%;
-      padding: 0.75rem;
-      border: 2px solid var(--border-color);
-      border-radius: 8px;
+      padding: var(--space-3) var(--space-4);
+      border: 2px solid var(--gray-200);
+      border-radius: var(--radius-lg);
       font-size: 1rem;
-      transition: border-color 0.3s ease;
+      transition: all var(--transition-fast);
+      background: white;
     }
 
-    .form-group input:focus,
-    .form-group textarea:focus {
+    .form-input:focus,
+    .form-textarea:focus {
       outline: none;
-      border-color: var(--primary-color);
+      border-color: var(--primary-500);
+      box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
     }
 
-    /* Button Styles */
-    .btn {
-      display: inline-block;
-      padding: 0.75rem 2rem;
-      border: none;
-      border-radius: 8px;
-      font-size: 1rem;
-      font-weight: 500;
-      text-decoration: none;
-      text-align: center;
-      cursor: pointer;
-      transition: all 0.3s ease;
-    }
-
-    .btn-primary {
-      background: var(--gradient-primary);
-      color: white;
-    }
-
-    .btn-primary:hover {
-      transform: translateY(-2px);
-      box-shadow: var(--shadow-lg);
+    .form-textarea {
+      resize: vertical;
+      min-height: 120px;
     }
 
     /* Footer */
     .footer {
-      background: var(--bg-dark);
+      background: var(--gray-900);
       color: white;
-      padding: 3rem 0 1rem;
+      padding: var(--space-20) 0 var(--space-8);
     }
 
     .footer-content {
       display: grid;
-      grid-template-columns: 1fr 2fr 1fr;
-      gap: 3rem;
-      margin-bottom: 2rem;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: var(--space-12);
+      margin-bottom: var(--space-12);
     }
 
-    .footer-logo p {
-      margin: 1rem 0;
-      opacity: 0.8;
+    .footer-brand p {
+      color: var(--gray-400);
+      margin: var(--space-4) 0 var(--space-6);
+      font-size: 1.125rem;
     }
 
     .social-links {
       display: flex;
-      gap: 1rem;
+      gap: var(--space-4);
     }
 
-    .social-links a {
-      width: 40px;
-      height: 40px;
-      background: rgba(255, 255, 255, 0.1);
-      border-radius: 50%;
+    .social-link {
+      width: 48px;
+      height: 48px;
       display: flex;
       align-items: center;
       justify-content: center;
+      background: var(--gray-800);
+      border-radius: var(--radius-full);
       color: white;
-      text-decoration: none;
-      transition: background 0.3s ease;
+      font-size: 1.25rem;
+      transition: all var(--transition-fast);
     }
 
-    .social-links a:hover {
-      background: var(--primary-color);
+    .social-link:hover {
+      background: var(--primary-600);
+      transform: translateY(-2px);
+      color: white;
+    }
+
+    .footer-section h4 {
+      color: white;
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: var(--space-6);
     }
 
     .footer-links {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 2rem;
-    }
-
-    .footer-links h4 {
-      margin-bottom: 1rem;
-      font-weight: 600;
-    }
-
-    .footer-links ul {
       list-style: none;
     }
 
     .footer-links li {
-      margin-bottom: 0.5rem;
+      margin-bottom: var(--space-3);
     }
 
     .footer-links a {
-      color: rgba(255, 255, 255, 0.8);
-      text-decoration: none;
-      transition: color 0.3s ease;
+      color: var(--gray-400);
+      transition: color var(--transition-fast);
     }
 
     .footer-links a:hover {
       color: white;
     }
 
-    .footer-contact address {
-      font-style: normal;
-      opacity: 0.8;
-    }
-
-    .footer-contact a {
-      color: rgba(255, 255, 255, 0.8);
-      text-decoration: none;
-    }
-
-    .footer-contact a:hover {
-      color: white;
-    }
-
     .footer-bottom {
-      grid-column: 1 / -1;
-      padding-top: 2rem;
-      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: var(--space-8);
+      border-top: 1px solid var(--gray-800);
       display: flex;
       justify-content: space-between;
       align-items: center;
-      opacity: 0.8;
+      color: var(--gray-400);
     }
 
     .footer-bottom-links {
       display: flex;
-      gap: 2rem;
+      gap: var(--space-6);
     }
 
     .footer-bottom-links a {
-      color: rgba(255, 255, 255, 0.8);
-      text-decoration: none;
-      transition: color 0.3s ease;
+      color: var(--gray-400);
+      transition: color var(--transition-fast);
     }
 
     .footer-bottom-links a:hover {
@@ -606,7 +999,7 @@
     }
 
     /* Animations */
-    @keyframes fadeInUp {
+    @keyframes slideInUp {
       from {
         opacity: 0;
         transform: translateY(30px);
@@ -617,13 +1010,37 @@
       }
     }
 
-    @keyframes slide {
+    @keyframes slideInDown {
       from {
-        transform: translateX(0);
+        opacity: 0;
+        transform: translateY(-30px);
       }
       to {
-        transform: translateX(-100%);
+        opacity: 1;
+        transform: translateY(0);
       }
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-20px); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    /* Scroll animations */
+    .scroll-reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease;
+    }
+
+    .scroll-reveal.revealed {
+      opacity: 1;
+      transform: translateY(0);
     }
 
     /* Responsive Design */
@@ -636,98 +1053,107 @@
         display: flex;
       }
 
-      .hero h1 {
-        font-size: 2.5rem;
+      .hero-cta {
+        flex-direction: column;
+        align-items: center;
       }
 
-      .hero p {
-        font-size: 1.125rem;
+      .stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-4);
       }
 
-      .section-heading h2,
-      .section-header h2 {
-        font-size: 2rem;
+      .process-grid,
+      .services-grid,
+      .leadership-grid {
+        grid-template-columns: 1fr;
       }
 
+      .about-content,
       .contact-content {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: var(--space-8);
       }
 
       .footer-content {
         grid-template-columns: 1fr;
-        gap: 2rem;
-      }
-
-      .footer-links {
-        grid-template-columns: 1fr;
+        gap: var(--space-8);
+        text-align: center;
       }
 
       .footer-bottom {
         flex-direction: column;
-        gap: 1rem;
+        gap: var(--space-4);
         text-align: center;
       }
 
-      .clients-track {
-        gap: 2rem;
+      .form-grid {
+        grid-template-columns: 1fr;
       }
 
-      .client-logo {
-        height: 40px;
+      .clients-grid {
+        grid-template-columns: repeat(2, 1fr);
       }
     }
 
     @media (max-width: 480px) {
       .container {
-        padding: 0 15px;
+        padding: 0 var(--space-3);
       }
 
-      .hero h1 {
-        font-size: 2rem;
+      .stats {
+        grid-template-columns: 1fr;
       }
 
-      .leadership-card {
-        padding: 1.5rem;
+      .clients-grid {
+        grid-template-columns: 1fr;
       }
 
-      .leader-image {
-        width: 100px;
-        height: 100px;
+      .about-stats {
+        grid-template-columns: 1fr;
       }
     }
 
-    /* Smooth scrolling */
-    html {
-      scroll-behavior: smooth;
-    }
-
-    /* Loading animation for images */
+    /* Performance optimizations */
     img {
-      loading: lazy;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .lazy {
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .lazy.loaded {
+      opacity: 1;
     }
   </style>
 </head>
 
 <body>
-  <!-- Header Section -->
+  <!-- Header -->
   <header class="header" id="header">
     <div class="container">
       <div class="header-content">
-        <div class="logo">
-          <a href="/"><img src="https://i.ibb.co/hRCxX3Dt/sig-logo.png" alt="SIG Solutions Logo" class="logo-img" width="180" height="45"></a>
-        </div>
+        <img src="https://i.ibb.co/hRCxX3Dt/sig-logo.png" alt="SIG Solutions Logo" class="logo" width="180" height="50">
+        
         <nav class="nav">
           <ul class="nav-list">
-            <li><a href="#about">About</a></li>
-            <li><a href="#solutions">Solutions</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#process" class="nav-link">Process</a></li>
+            <li><a href="#services" class="nav-link">Services</a></li>
+            <li><a href="#leadership" class="nav-link">Leadership</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
           </ul>
-          <div class="mobile-menu-btn" id="mobileMenuBtn">
+          
+          <a href="#contact" class="btn btn-primary">Get Started</a>
+          
+          <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle mobile menu">
             <span></span>
             <span></span>
             <span></span>
-          </div>
+          </button>
         </nav>
       </div>
     </div>
@@ -736,43 +1162,241 @@
   <main>
     <!-- Hero Section -->
     <section class="hero">
-      <div class="hero-animation">
-        <canvas id="waveCanvas" class="wave-canvas"></canvas>
-      </div>
-      <div class="hero-carousel">
-        <div class="carousel-slides">
-          <div class="carousel-slide active slide-1"></div>
-          <div class="carousel-slide slide-2"></div>
-          <div class="carousel-slide slide-3"></div>
-        </div>
-      </div>
       <div class="container">
         <div class="hero-content">
+          <div class="hero-badge">
+            <i class="fas fa-trophy"></i>
+            <span>Industry Leaders in Call Center Solutions</span>
+          </div>
+          
           <h1>Click. Close. Collect.</h1>
-          <p>We generate leads, sell your products, and manage collections for subscription-based businesses.</p>
-          <h2 class="client-header">Trusted By Industry Leaders</h2>
-          <div class="clients-slider">
-            <div class="clients-track">
-              <div class="client-logo"><img src="https://i.ibb.co/pBH32q98/download-1.png" alt="Client 1" loading="lazy"></div>
-              <div class="client-logo"><img src="https://i.ibb.co/MxBZV0RL/Firearms-Guardian-Logo.png" alt="Client 2" loading="lazy"></div>
-              <div class="client-logo"><img src="https://i.ibb.co/spRGF3Ln/CL-Stacked-Logo.png" alt="Client 3" loading="lazy"></div>
-              <div class="client-logo"><img src="https://i.ibb.co/1fHx0YVV/download-2.png" alt="Client 4" loading="lazy"></div>
-              <div class="client-logo"><img src="https://i.ibb.co/67WrsrGC/Free-SA-Logo-Main.png" alt="Client 5" loading="lazy"></div>
-              <div class="client-logo"><img src="https://i.ibb.co/pBH32q98/download-1.png" alt="Client 1" loading="lazy"></div>
-              <div class="client-logo"><img src="https://i.ibb.co/MxBZV0RL/Firearms-Guardian-Logo.png" alt="Client 2" loading="lazy"></div>
-              <div class="client-logo"><img src="https://i.ibb.co/spRGF3Ln/CL-Stacked-Logo.png" alt="Client 3" loading="lazy"></div>
+          
+          <p class="hero-subtitle">
+            Transform your business with our proven three-step methodology. We generate qualified leads, close more sales, and manage collections for subscription-based businesses across South Africa.
+          </p>
+          
+          <div class="hero-cta">
+            <a href="#contact" class="btn btn-primary btn-lg">
+              <i class="fas fa-rocket"></i>
+              Start Growing Today
+            </a>
+            <a href="#process" class="btn btn-secondary btn-lg">
+              <i class="fas fa-play-circle"></i>
+              See How It Works
+            </a>
+          </div>
+
+          <div class="stats">
+            <div class="stat-item">
+              <span class="stat-number" data-count="500">0</span>
+              <span class="stat-label">Happy Clients</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-count="95">0</span>
+              <span class="stat-label">Success Rate %</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-count="10">0</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-count="24">0</span>
+              <span class="stat-label">Hours Support</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Solutions Section -->
-    <section id="solutions" class="solutions-section">
+    <!-- Clients Section -->
+    <section class="clients">
       <div class="container">
-        <div class="section-heading">
-          <h2>Our Click-Close-Collect Solution</h2>
-          <p>A comprehensive, three-step process designed to fuel your growth, from initial contact to recurring revenue.</p>
+        <div class="clients-header">
+          <h2>Trusted by Industry Leaders</h2>
+          <p>Join hundreds of successful businesses that trust SIG Solutions</p>
+        </div>
+        
+        <div class="clients-grid">
+          <div class="client-logo">
+            <img src="https://i.ibb.co/pBH32q98/download-1.png" alt="Trusted Client" loading="lazy">
+          </div>
+          <div class="client-logo">
+            <img src="https://i.ibb.co/MxBZV0RL/Firearms-Guardian-Logo.png" alt="Firearms Guardian" loading="lazy">
+          </div>
+          <div class="client-logo">
+            <img src="https://i.ibb.co/spRGF3Ln/CL-Stacked-Logo.png" alt="CL Solutions" loading="lazy">
+          </div>
+          <div class="client-logo">
+            <img src="https://i.ibb.co/1fHx0YVV/download-2.png" alt="Strategic Partner" loading="lazy">
+          </div>
+          <div class="client-logo">
+            <img src="https://i.ibb.co/67WrsrGC/Free-SA-Logo-Main.png" alt="Free SA" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="process">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Proven Click-Close-Collect Process</h2>
+          <p>A comprehensive, three-step methodology designed to fuel your growth from initial contact to recurring revenue.</p>
+        </div>
+        
+        <div class="process-grid scroll-reveal">
+          <div class="process-step">
+            <div class="step-number">1</div>
+            <div class="step-icon">
+              <i class="fas fa-mouse-pointer"></i>
+            </div>
+            <h3 class="step-title">CLICK - Lead Generation</h3>
+            <p class="step-description">
+              We identify and engage high-quality prospects through targeted outreach campaigns. Our data-driven approach ensures we connect with decision-makers who are genuinely interested in your products or services.
+            </p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> Targeted prospect identification</li>
+              <li><i class="fas fa-check"></i> Multi-channel outreach campaigns</li>
+              <li><i class="fas fa-check"></i> Quality lead qualification</li>
+              <li><i class="fas fa-check"></i> Real-time lead tracking</li>
+            </ul>
+          </div>
+
+          <div class="process-step">
+            <div class="step-number">2</div>
+            <div class="step-icon">
+              <i class="fas fa-handshake"></i>
+            </div>
+            <h3 class="step-title">CLOSE - Sales Conversion</h3>
+            <p class="step-description">
+              Our experienced sales professionals nurture leads through personalized conversations, addressing objections and guiding prospects toward purchase decisions that benefit both parties.
+            </p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> Personalized sales presentations</li>
+              <li><i class="fas fa-check"></i> Objection handling expertise</li>
+              <li><i class="fas fa-check"></i> Consultative selling approach</li>
+              <li><i class="fas fa-check"></i> Deal tracking and optimization</li>
+            </ul>
+          </div>
+
+          <div class="process-step">
+            <div class="step-number">3</div>
+            <div class="step-icon">
+              <i class="fas fa-coins"></i>
+            </div>
+            <h3 class="step-title">COLLECT - Revenue Management</h3>
+            <p class="step-description">
+              We ensure consistent cash flow through professional collection services and customer retention strategies, maximizing the lifetime value of every customer relationship.
+            </p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> Automated payment processing</li>
+              <li><i class="fas fa-check"></i> Professional collection services</li>
+              <li><i class="fas fa-check"></i> Customer retention programs</li>
+              <li><i class="fas fa-check"></i> Revenue optimization strategies</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+      <div class="container">
+        <div class="section-header">
+          <h2>Comprehensive Business Solutions</h2>
+          <p>Everything you need to grow your subscription-based business, delivered by industry experts.</p>
+        </div>
+        
+        <div class="services-grid scroll-reveal">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h3 class="service-title">Lead Generation & Qualification</h3>
+            <p>Transform prospects into qualified opportunities with our data-driven lead generation strategies.</p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> B2B & B2C lead generation</li>
+              <li><i class="fas fa-check"></i> Advanced prospect research</li>
+              <li><i class="fas fa-check"></i> Multi-channel campaigns</li>
+              <li><i class="fas fa-check"></i> Lead scoring and qualification</li>
+              <li><i class="fas fa-check"></i> CRM integration and management</li>
+            </ul>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3 class="service-title">Sales Support & Training</h3>
+            <p>Boost your sales performance with our experienced team and proven methodologies.</p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> Dedicated sales representatives</li>
+              <li><i class="fas fa-check"></i> Sales process optimization</li>
+              <li><i class="fas fa-check"></i> Team training and development</li>
+              <li><i class="fas fa-check"></i> Performance analytics</li>
+              <li><i class="fas fa-check"></i> Custom sales strategies</li>
+            </ul>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-credit-card"></i>
+            </div>
+            <h3 class="service-title">Collection & Retention Services</h3>
+            <p>Maintain healthy cash flow and customer relationships with professional collection services.</p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> Automated payment reminders</li>
+              <li><i class="fas fa-check"></i> Professional debt collection</li>
+              <li><i class="fas fa-check"></i> Customer retention strategies</li>
+              <li><i class="fas fa-check"></i> Payment plan negotiations</li>
+              <li><i class="fas fa-check"></i> Legal compliance assurance</li>
+            </ul>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-heart"></i>
+            </div>
+            <h3 class="service-title">Non-Profit Fundraising</h3>
+            <p>Specialized fundraising solutions for non-profit organizations and charitable causes.</p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> Donor prospect research</li>
+              <li><i class="fas fa-check"></i> Fundraising campaign management</li>
+              <li><i class="fas fa-check"></i> Donor relationship building</li>
+              <li><i class="fas fa-check"></i> Grant writing assistance</li>
+              <li><i class="fas fa-check"></i> Event fundraising support</li>
+            </ul>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-headset"></i>
+            </div>
+            <h3 class="service-title">Customer Support</h3>
+            <p>Deliver exceptional customer experiences that drive loyalty and positive word-of-mouth.</p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> 24/7 customer support</li>
+              <li><i class="fas fa-check"></i> Multi-channel communication</li>
+              <li><i class="fas fa-check"></i> Technical issue resolution</li>
+              <li><i class="fas fa-check"></i> Customer satisfaction tracking</li>
+              <li><i class="fas fa-check"></i> Escalation management</li>
+            </ul>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-cogs"></i>
+            </div>
+            <h3 class="service-title">Process Optimization</h3>
+            <p>Streamline your operations with our business process analysis and improvement services.</p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> Workflow analysis and design</li>
+              <li><i class="fas fa-check"></i> Technology integration</li>
+              <li><i class="fas fa-check"></i> Quality assurance programs</li>
+              <li><i class="fas fa-check"></i> Performance metrics tracking</li>
+              <li><i class="fas fa-check"></i> Continuous improvement initiatives</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -781,64 +1405,105 @@
     <section id="about" class="about">
       <div class="container">
         <div class="section-header">
-          <h2>Who We Are</h2>
+          <h2>Why Choose SIG Solutions</h2>
+          <p>Experience the difference that expertise, technology, and dedication make.</p>
         </div>
-        <div class="about-content">
+        
+        <div class="about-content scroll-reveal">
           <div class="about-text">
-            <p>At SIG Solutions, we understand the challenges of growing a subscription-based business. Our comprehensive approach combines cutting-edge technology with human expertise to deliver measurable results for our clients.</p>
-            <p>We take pride in our ability to seamlessly integrate with your existing processes, providing the support you need to focus on your core business while we handle the critical aspects of customer acquisition and revenue management.</p>
+            <h3>Unparalleled Expertise in Subscription Business Growth</h3>
+            <p>
+              At SIG Solutions, we understand the unique challenges of growing a subscription-based business in today's competitive landscape. Our comprehensive approach combines cutting-edge technology with human expertise to deliver measurable results for our clients.
+            </p>
+            <p>
+              We take pride in our ability to seamlessly integrate with your existing processes, providing the support you need to focus on your core business while we handle the critical aspects of customer acquisition, sales conversion, and revenue management.
+            </p>
+            <p>
+              Our team of experienced professionals brings decades of combined experience in call center operations, sales, and customer relationship management. We don't just provide services – we become your strategic partner in growth.
+            </p>
+            
+            <div class="about-stats">
+              <div class="about-stat">
+                <span class="about-stat-number" data-count="10">0</span>
+                <span>Years of Excellence</span>
+              </div>
+              <div class="about-stat">
+                <span class="about-stat-number" data-count="500">0</span>
+                <span>Satisfied Clients</span>
+              </div>
+              <div class="about-stat">
+                <span class="about-stat-number" data-count="1000000">0</span>
+                <span>Calls Handled</span>
+              </div>
+              <div class="about-stat">
+                <span class="about-stat-number" data-count="95">0</span>
+                <span>Success Rate %</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="SIG Solutions Team at Work" loading="lazy">
           </div>
         </div>
       </div>
     </section>
 
     <!-- Leadership Section -->
-    <section class="leadership-section">
+    <section id="leadership" class="leadership">
       <div class="container">
-        <div class="section-heading">
-          <h2>Our Leadership</h2>
-          <p>Meet the experienced team driving our success and yours.</p>
+        <div class="section-header">
+          <h2>Meet Our Leadership Team</h2>
+          <p>Experienced professionals driving innovation and success in every client relationship.</p>
         </div>
-        <div class="leadership-grid">
-          <div class="leadership-card">
+        
+        <div class="leadership-grid scroll-reveal">
+          <div class="leader-card">
             <div class="leader-image">
-              <img src="https://i.ibb.co/yQW2k8J/Johannes.png" alt="Johannes Stoker" loading="lazy">
+              <img src="https://i.ibb.co/yQW2k8J/Johannes.png" alt="Johannes Stoker - Shareholder" loading="lazy">
             </div>
-            <div class="card-content">
-              <h3>Johannes Stoker</h3>
-              <p class="leader-title">Shareholder</p>
-            </div>
-            <a href="mailto:johannes@sigsolutions.co.za" class="btn btn-primary">Contact</a>
+            <h3 class="leader-name">Johannes Stoker</h3>
+            <p class="leader-title">Co-Founder & Strategic Director</p>
+            <a href="mailto:johannes@sigsolutions.co.za" class="btn btn-primary">
+              <i class="fas fa-envelope"></i>
+              Contact Johannes
+            </a>
           </div>
-          <div class="leadership-card">
+
+          <div class="leader-card">
             <div class="leader-image">
-              <img src="https://i.ibb.co/vBF7Bfc/Charles.png" alt="Charles Castle" loading="lazy">
+              <img src="https://i.ibb.co/vBF7Bfc/Charles.png" alt="Charles Castle - Shareholder" loading="lazy">
             </div>
-            <div class="card-content">
-              <h3>Charles Castle</h3>
-              <p class="leader-title">Shareholder</p>
-            </div>
-            <a href="mailto:charles@sigsolutions.co.za" class="btn btn-primary">Contact</a>
+            <h3 class="leader-name">Charles Castle</h3>
+            <p class="leader-title">Co-Founder & Operations Director</p>
+            <a href="mailto:charles@sigsolutions.co.za" class="btn btn-primary">
+              <i class="fas fa-envelope"></i>
+              Contact Charles
+            </a>
           </div>
-          <div class="leadership-card">
+
+          <div class="leader-card">
             <div class="leader-image">
-              <img src="https://i.ibb.co/N1XqP2w/Franz.png" alt="Franz Badenhorst" loading="lazy">
+              <img src="https://i.ibb.co/N1XqP2w/Franz.png" alt="Franz Badenhorst - Shareholder" loading="lazy">
             </div>
-            <div class="card-content">
-              <h3>Franz Badenhorst</h3>
-              <p class="leader-title">Shareholder</p>
-            </div>
-            <a href="mailto:franz@sigsolutions.co.za" class="btn btn-primary">Contact</a>
+            <h3 class="leader-name">Franz Badenhorst</h3>
+            <p class="leader-title">Co-Founder & Technology Director</p>
+            <a href="mailto:franz@sigsolutions.co.za" class="btn btn-primary">
+              <i class="fas fa-envelope"></i>
+              Contact Franz
+            </a>
           </div>
-          <div class="leadership-card">
+
+          <div class="leader-card">
             <div class="leader-image">
-              <img src="https://i.ibb.co/bK6wY2M/Ivan.png" alt="Ivan Taljard" loading="lazy">
+              <img src="https://i.ibb.co/bK6wY2M/Ivan.png" alt="Ivan Taljard - Shareholder" loading="lazy">
             </div>
-            <div class="card-content">
-              <h3>Ivan Taljard</h3>
-              <p class="leader-title">Shareholder</p>
-            </div>
-            <a href="mailto:ivan@sigsolutions.co.za" class="btn btn-primary">Contact</a>
+            <h3 class="leader-name">Ivan Taljard</h3>
+            <p class="leader-title">Co-Founder & Business Development Director</p>
+            <a href="mailto:ivan@sigsolutions.co.za" class="btn btn-primary">
+              <i class="fas fa-envelope"></i>
+              Contact Ivan
+            </a>
           </div>
         </div>
       </div>
@@ -848,71 +1513,120 @@
     <section id="contact" class="contact">
       <div class="container">
         <div class="section-header">
-          <h2>Work With Us</h2>
-          <p>Get in touch with our team to discuss how SIG Solutions can help you achieve your business goals.</p>
+          <h2>Ready to Transform Your Business?</h2>
+          <p>Let's discuss how SIG Solutions can accelerate your growth with our proven Click-Close-Collect methodology.</p>
         </div>
-        <div class="contact-content">
+        
+        <div class="contact-content scroll-reveal">
           <div class="contact-info">
-            <h3>Company Contact Details</h3>
+            <h3>Get in Touch</h3>
+            <p>Our team is ready to discuss your specific needs and create a customized solution that drives real results.</p>
+            
             <div class="info-grid">
               <div class="info-item">
                 <div class="info-icon">
                   <i class="fas fa-envelope"></i>
                 </div>
                 <div class="info-text">
-                  <h4>Email</h4>
-                  <a href="mailto:sales@sigsolutions.co.za">sales@sigsolutions.co.za</a>
+                  <h4>Email Us</h4>
+                  <p><a href="mailto:sales@sigsolutions.co.za">sales@sigsolutions.co.za</a></p>
+                  <p>Response within 2 hours during business hours</p>
                 </div>
               </div>
+
               <div class="info-item">
                 <div class="info-icon">
                   <i class="fas fa-map-marker-alt"></i>
                 </div>
                 <div class="info-text">
-                  <h4>Location</h4>
-                  <address>Riviera, Pretoria, South Africa</address>
+                  <h4>Our Location</h4>
+                  <address>
+                    Riviera, Pretoria<br>
+                    Gauteng, South Africa
+                  </address>
                 </div>
               </div>
+
               <div class="info-item">
                 <div class="info-icon">
                   <i class="fas fa-clock"></i>
                 </div>
                 <div class="info-text">
                   <h4>Business Hours</h4>
-                  <p>Monday - Friday: 8:00 AM - 5:00 PM</p>
+                  <p>Monday - Friday: 8:00 AM - 5:00 PM SAST</p>
+                  <p>Emergency support available 24/7</p>
                 </div>
               </div>
+
               <div class="info-item">
                 <div class="info-icon">
                   <i class="fas fa-phone-alt"></i>
                 </div>
                 <div class="info-text">
-                  <h4>Phone</h4>
+                  <h4>Phone Consultation</h4>
+                  <p>Schedule a call with our experts</p>
                   <p>Available upon request</p>
                 </div>
               </div>
             </div>
           </div>
+
           <div class="contact-form">
             <h3>Send Us a Message</h3>
+            <p>Complete the form below and we'll respond within 2 hours during business hours.</p>
+            
             <form id="contactForm">
-              <div class="form-group">
-                <label for="name">Name <span class="required">*</span></label>
-                <input type="text" id="name" name="name" required>
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="firstName" class="form-label">First Name <span class="required">*</span></label>
+                  <input type="text" id="firstName" name="firstName" class="form-input" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="lastName" class="form-label">Last Name <span class="required">*</span></label>
+                  <input type="text" id="lastName" name="lastName" class="form-input" required>
+                </div>
               </div>
-              <div class="form-group">
-                <label for="email">Email <span class="required">*</span></label>
-                <input type="email" id="email" name="email" required>
+              
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="email" class="form-label">Email Address <span class="required">*</span></label>
+                  <input type="email" id="email" name="email" class="form-input" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="phone" class="form-label">Phone Number</label>
+                  <input type="tel" id="phone" name="phone" class="form-input">
+                </div>
               </div>
+              
               <div class="form-group">
-                <label for="company">Company</label>
-                <input type="text" id="company" name="company">
+                <label for="company" class="form-label">Company Name</label>
+                <input type="text" id="company" name="company" class="form-input">
               </div>
+              
               <div class="form-group">
-                <label for="message">Message <span class="required">*</span></label>
-                <textarea id="message" name="message" rows="5" required></textarea>
+                <label for="service" class="form-label">Service Interest</label>
+                <select id="service" name="service" class="form-input">
+                  <option value="">Select a service...</option>
+                  <option value="lead-generation">Lead Generation</option>
+                  <option value="sales-support">Sales Support</option>
+                  <option value="collections">Collections Management</option>
+                  <option value="fundraising">Non-Profit Fundraising</option>
+                  <option value="customer-support">Customer Support</option>
+                  <option value="full-service">Complete Click-Close-Collect Solution</option>
+                </select>
               </div>
-              <button type="submit" class="btn btn-primary">Send Message</button>
+              
+              <div class="form-group full-width">
+                <label for="message" class="form-label">Tell Us About Your Needs <span class="required">*</span></label>
+                <textarea id="message" name="message" class="form-textarea" rows="5" placeholder="Describe your business challenges and goals..." required></textarea>
+              </div>
+              
+              <button type="submit" class="btn btn-primary btn-lg">
+                <i class="fas fa-paper-plane"></i>
+                Send Message
+              </button>
             </form>
           </div>
         </div>
@@ -920,73 +1634,128 @@
     </section>
   </main>
 
-  <!-- Footer Section -->
+  <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <div class="footer-content">
-        <div class="footer-logo">
-          <a href="/"><img src="https://i.ibb.co/hRCxX3Dt/sig-logo.png" alt="SIG Solutions Logo" class="logo-img"></a>
+        <div class="footer-brand">
+          <img src="https://i.ibb.co/hRCxX3Dt/sig-logo.png" alt="SIG Solutions Logo" class="logo">
           <p>Optimizing Revenue Flow with Minimal Complexity</p>
+          <p>Your trusted partner for sustainable business growth through our proven Click-Close-Collect methodology.</p>
+          
           <div class="social-links">
-            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-            <a href="mailto:sales@sigsolutions.co.za" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            <a href="#" class="social-link" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:sales@sigsolutions.co.za" class="social-link" aria-label="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
           </div>
         </div>
-        <div class="footer-links">
-          <div class="footer-links-column">
-            <h4>Quick Links</h4>
-            <ul>
-              <li><a href="#about">About</a></li>
-              <li><a href="#solutions">Solutions</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
-          <div class="footer-links-column">
-            <h4>Our Solutions</h4>
-            <ul>
-              <li><a href="#solutions">Lead Generation</a></li>
-              <li><a href="#solutions">Sales Support</a></li>
-              <li><a href="#solutions">Fund Collection</a></li>
-            </ul>
-          </div>
+        
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#process">Our Process</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#leadership">Leadership</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
-        <div class="footer-contact">
-          <h4>Contact Us</h4>
-          <address>
-            <p>Riviera, Pretoria, South Africa</p>
+        
+        <div class="footer-section">
+          <h4>Our Services</h4>
+          <ul class="footer-links">
+            <li><a href="#services">Lead Generation</a></li>
+            <li><a href="#services">Sales Support</a></li>
+            <li><a href="#services">Collections Management</a></li>
+            <li><a href="#services">Non-Profit Fundraising</a></li>
+            <li><a href="#services">Customer Support</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Contact Info</h4>
+          <address class="footer-links">
+            <p>Riviera, Pretoria<br>Gauteng, South Africa</p>
             <p><a href="mailto:sales@sigsolutions.co.za">sales@sigsolutions.co.za</a></p>
+            <p>Mon - Fri: 8:00 AM - 5:00 PM SAST</p>
           </address>
         </div>
       </div>
+      
       <div class="footer-bottom">
-        <p>© <span id="copyrightYear">2025</span> SIG Solutions – Optimizing Revenue Flow with Minimal Complexity</p>
+        <p>&copy; <span id="copyrightYear">2025</span> SIG Solutions. All rights reserved. Optimizing Revenue Flow with Minimal Complexity.</p>
         <div class="footer-bottom-links">
           <a href="https://sigsolutions.co.za/privacy" target="_blank" rel="noopener">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
+          <a href="#" target="_blank" rel="noopener">Terms of Service</a>
+          <a href="#" target="_blank" rel="noopener">Cookie Policy</a>
         </div>
       </div>
     </div>
   </footer>
 
   <script>
-    // Header scroll effect
+    // Header scroll effect and navigation
+    const header = document.getElementById('header');
+    const navLinks = document.querySelectorAll('.nav-link');
+    
     window.addEventListener('scroll', function() {
-      const header = document.getElementById('header');
       if (window.scrollY > 100) {
         header.classList.add('scrolled');
       } else {
         header.classList.remove('scrolled');
       }
+      
+      // Update active nav link based on scroll position
+      let current = '';
+      document.querySelectorAll('section[id]').forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (scrollY >= sectionTop - 200) {
+          current = section.getAttribute('id');
+        }
+      });
+      
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) {
+          link.classList.add('active');
+        }
+      });
     });
 
-    // Mobile menu toggle
+    // Mobile menu functionality
     const mobileMenuBtn = document.getElementById('mobileMenuBtn');
     const navList = document.querySelector('.nav-list');
+    let mobileMenuOpen = false;
 
     mobileMenuBtn.addEventListener('click', function() {
-      navList.style.display = navList.style.display === 'flex' ? 'none' : 'flex';
+      mobileMenuOpen = !mobileMenuOpen;
+      
+      if (mobileMenuOpen) {
+        navList.style.display = 'flex';
+        navList.style.flexDirection = 'column';
+        navList.style.position = 'absolute';
+        navList.style.top = '100%';
+        navList.style.left = '0';
+        navList.style.right = '0';
+        navList.style.background = 'white';
+        navList.style.boxShadow = 'var(--shadow-lg)';
+        navList.style.padding = 'var(--space-4)';
+        navList.style.gap = 'var(--space-4)';
+        mobileMenuBtn.style.transform = 'rotate(90deg)';
+      } else {
+        navList.style.display = 'none';
+        mobileMenuBtn.style.transform = 'rotate(0deg)';
+      }
     });
 
     // Smooth scrolling for navigation links
@@ -999,86 +1768,106 @@
             behavior: 'smooth',
             block: 'start'
           });
+          
+          // Close mobile menu if open
+          if (mobileMenuOpen) {
+            navList.style.display = 'none';
+            mobileMenuBtn.style.transform = 'rotate(0deg)';
+            mobileMenuOpen = false;
+          }
         }
       });
     });
 
-    // Hero carousel
-    const slides = document.querySelectorAll('.carousel-slide');
-    let currentSlide = 0;
-
-    function nextSlide() {
-      slides[currentSlide].classList.remove('active');
-      currentSlide = (currentSlide + 1) % slides.length;
-      slides[currentSlide].classList.add('active');
-    }
-
-    setInterval(nextSlide, 5000);
-
-    // Wave animation
-    const canvas = document.getElementById('waveCanvas');
-    const ctx = canvas.getContext('2d');
-    let animationId;
-
-    function resizeCanvas() {
-      canvas.width = canvas.offsetWidth;
-      canvas.height = canvas.offsetHeight;
-    }
-
-    function drawWave() {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
+    // Animated counters
+    function animateCounter(element, target, duration = 2000) {
+      const start = 0;
+      const increment = target / (duration / 16);
+      let current = start;
       
-      const waves = [
-        { amplitude: 50, frequency: 0.01, phase: Date.now() * 0.001, color: 'rgba(59, 130, 246, 0.3)' },
-        { amplitude: 30, frequency: 0.015, phase: Date.now() * 0.0015, color: 'rgba(6, 182, 212, 0.2)' },
-        { amplitude: 40, frequency: 0.008, phase: Date.now() * 0.0008, color: 'rgba(30, 64, 175, 0.1)' }
-      ];
-
-      waves.forEach(wave => {
-        ctx.beginPath();
-        ctx.strokeStyle = wave.color;
-        ctx.lineWidth = 2;
+      const timer = setInterval(() => {
+        current += increment;
+        if (current >= target) {
+          current = target;
+          clearInterval(timer);
+        }
         
-        for (let x = 0; x < canvas.width; x++) {
-          const y = canvas.height / 2 + Math.sin(x * wave.frequency + wave.phase) * wave.amplitude;
-          if (x === 0) {
-            ctx.moveTo(x, y);
-          } else {
-            ctx.lineTo(x, y);
+        if (target >= 1000000) {
+          element.textContent = (current / 1000000).toFixed(1) + 'M+';
+        } else if (target >= 1000) {
+          element.textContent = (current / 1000).toFixed(0) + 'K+';
+        } else {
+          element.textContent = Math.floor(current) + (target < 100 && target > 10 ? '%' : '+');
+        }
+      }, 16);
+    }
+
+    // Intersection Observer for animations
+    const observerOptions = {
+      threshold: 0.2,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver(function(entries) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          
+          // Animate counters when they come into view
+          if (entry.target.classList.contains('stats') || entry.target.classList.contains('about-stats')) {
+            entry.target.querySelectorAll('[data-count]').forEach(counter => {
+              if (!counter.classList.contains('animated')) {
+                counter.classList.add('animated');
+                const target = parseInt(counter.getAttribute('data-count'));
+                animateCounter(counter, target);
+              }
+            });
           }
         }
-        ctx.stroke();
       });
+    }, observerOptions);
 
-      animationId = requestAnimationFrame(drawWave);
-    }
+    // Observe elements for scroll animations
+    document.querySelectorAll('.scroll-reveal, .stats, .about-stats').forEach(el => {
+      observer.observe(el);
+    });
 
-    // Initialize wave animation
-    resizeCanvas();
-    drawWave();
-
-    window.addEventListener('resize', resizeCanvas);
-
-    // Contact form
+    // Contact form handling
     document.getElementById('contactForm').addEventListener('submit', function(e) {
       e.preventDefault();
       
       const formData = new FormData(this);
-      const name = formData.get('name');
+      const firstName = formData.get('firstName');
+      const lastName = formData.get('lastName');
       const email = formData.get('email');
+      const phone = formData.get('phone');
       const company = formData.get('company');
+      const service = formData.get('service');
       const message = formData.get('message');
 
-      // Create mailto link with form data
-      const subject = encodeURIComponent('Contact from ' + (company ? company + ' - ' : '') + name);
+      // Create comprehensive email content
+      const subject = encodeURIComponent(`New Business Inquiry from ${firstName} ${lastName}${company ? ' - ' + company : ''}`);
       const body = encodeURIComponent(
-        'Name: ' + name + '\n' +
-        'Email: ' + email + '\n' +
-        (company ? 'Company: ' + company + '\n' : '') +
-        'Message: ' + message
+        `NEW BUSINESS INQUIRY\n\n` +
+        `Contact Information:\n` +
+        `Name: ${firstName} ${lastName}\n` +
+        `Email: ${email}\n` +
+        `Phone: ${phone || 'Not provided'}\n` +
+        `Company: ${company || 'Not provided'}\n\n` +
+        `Service Interest: ${service || 'General inquiry'}\n\n` +
+        `Message:\n${message}\n\n` +
+        `---\nSubmitted via sigsolutions.co.za contact form\n` +
+        `Timestamp: ${new Date().toLocaleString('en-ZA', { timeZone: 'Africa/Johannesburg' })}`
       );
 
-      window.location.href = 'mailto:sales@sigsolutions.co.za?subject=' + subject + '&body=' + body;
+      // Open email client
+      window.location.href = `mailto:sales@sigsolutions.co.za?subject=${subject}&body=${body}`;
+      
+      // Show success message
+      alert('Thank you for your inquiry! Your email client should now open with your message. We\'ll respond within 2 hours during business hours.');
+      
+      // Reset form
+      this.reset();
     });
 
     // Set copyright year
@@ -1089,24 +1878,34 @@
       }
     });
 
-    // Intersection Observer for animations
-    const observerOptions = {
-      threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px'
-    };
-
-    const observer = new IntersectionObserver(function(entries) {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.style.animationPlayState = 'running';
-        }
+    // Lazy loading for images
+    const lazyImages = document.querySelectorAll('img[loading="lazy"]');
+    
+    if ('IntersectionObserver' in window) {
+      const imageObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const img = entry.target;
+            img.classList.add('loaded');
+            observer.unobserve(img);
+          }
+        });
       });
-    }, observerOptions);
+      
+      lazyImages.forEach(img => {
+        img.classList.add('lazy');
+        imageObserver.observe(img);
+      });
+    }
 
-    // Observe animated elements
-    document.querySelectorAll('.leadership-card, .about-text, .contact-content').forEach(el => {
-      observer.observe(el);
-    });
+    // Performance optimization: Preload critical resources
+    const preloadFont = document.createElement('link');
+    preloadFont.rel = 'preload';
+    preloadFont.as = 'font';
+    preloadFont.type = 'font/woff2';
+    preloadFont.href = 'https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiJ-Ek-_EeA.woff2';
+    preloadFont.crossOrigin = 'anonymous';
+    document.head.appendChild(preloadFont);
   </script>
 </body>
 </html>
